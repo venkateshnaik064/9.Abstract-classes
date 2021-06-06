@@ -1,0 +1,20 @@
+package com.company;
+import java.util.*;
+abstract class Animal{
+    public void display() { // non-abstract method
+        System.out.print("Welcome to jala technologies");
+    }
+    public abstract void sound();
+}
+public class Main extends Animal{
+
+    public void sound(){
+        super.display();
+        System.out.println("Woof");
+    }
+    public static void main(String args[]){
+        Animal obj = new Main();
+        obj.sound();
+        obj.display();
+    }
+}
